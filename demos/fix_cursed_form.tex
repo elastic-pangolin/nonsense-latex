@@ -1,0 +1,16 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=0mm]{geometry}
+\usepackage[abs]{overpic}
+\usepackage{hyperref}
+\begin{document}
+\begin{Form}
+\begin{overpic}[page=1]{demos/Form.pdf}
+    \put(71,475){\hspace{1.4cm}\TextField[name=lanr]{} \hspace{2.8cm} \TextField[name=titel]{} }
+    \put(71,452){\hspace{1.2cm}\TextField[name=name]{} \hspace{6.4cm} \TextField[name=vorname]{} }
+    \put(71,427){\CheckBox[name=einzel]{} }
+    \put(71,416){\hspace{1.9cm}\TextField[name=seit]{}}
+    \put(71,295){\TextField[name=anschrift]{}}
+    \put(71,267){\TextField[name=email]{} \hspace{6cm} \TextField[name=telefon]{}}
+\end{overpic}
+\end{Form}
+\end{document}

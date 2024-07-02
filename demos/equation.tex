@@ -1,0 +1,13 @@
+\documentclass[margin=6]{standalone}
+\usepackage{mathtools}
+\begin{document}
+\newcommand{\twopibyn}{ \frac{2\pi}{n} }
+\newcommand{\sqrooteddiv}[1]{ \frac{\sqrt{#1 ^2}}{#1} }
+% special thanks to Idiotinium and Matt Parker
+% https://www.desmos.com/calculator/svfvcsygfn?lang=de
+$
+\sqrt{x^2 + y^2} - \cfrac{ \sin (\pi\cdot\frac{n - 2}{2n}) }{ \sin\left(\pi - \pi\cdot\frac{n-2}{2n} - \left(\raisebox{-1.5ex}{%
+$\displaystyle\dfrac{\twopibyn\cdot\arctan\left(\tan\left(\pi\cdot\cfrac{1}{\twopibyn} \left(\left( \sqrooteddiv{x} \right)^2\cdot\arctan(\frac{y}{x}) + \pi\cdot\cfrac{1 - \sqrooteddiv{x}}{2}\left(1 + \sqrooteddiv{y} - (\sqrooteddiv{y})^2 \right)\right) + \cfrac{\twopibyn}{2} \right)\right)}{\pi}$%
+}\raisebox{-1.5ex}{$\displaystyle +\cfrac{\twopibyn}{2}$}\right)\right) } = 0
+$
+\end{document}

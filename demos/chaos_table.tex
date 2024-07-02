@@ -1,0 +1,15 @@
+\documentclass[margin=6]{standalone}
+\usepackage[xfp]{spreadtab}
+\usepackage{wasysym}
+\ExplSyntaxOn \sys_gset_rand_seed:n {13} \ExplSyntaxOff
+\begin{document}
+\begin{spreadtab}{{tabular}{|c|c|c|c|c|}}
+\hline
+@index & @$x$ (random) & @$x^2$  & @$x!$ \\ \hline
+1                    & \STcopy{v}{randint(10)} & \STcopy{v}{[-1,0]*[-1,0]} & \STcopy{v}{fact([-2,0])} \\ \hline
+\STcopy{v}{[0,-1]+1} &                         &                           & \\ \hline
+                     &                         &                           & \\ \hline\hline
+@$\sum$ & sum(b2:b4) & sum(c2:c4) & sum(d2:d4)\\ \hline
+@$\diameter$ (rounded) & \STcopy{>}{round([0,-1]/!a4,2)} & & \\ \hline
+\end{spreadtab}
+\end{document}

@@ -1,0 +1,12 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{contour}
+\usepackage{fontspec}
+\setmainfont{Impact}
+\contourlength{3pt}
+\begin{document}
+\begin{tikzpicture}[inner sep=0pt,outer sep=0pt]
+    \node (picture) {\includegraphics{demos/Malicious_Advice_Mallard.jpg}};
+    \draw (picture.south) node[anchor=south,inner ysep=25pt] {\contour{black}{\fontsize{75}{0} \selectfont \textcolor{white}{use LaTeX}}};
+\end{tikzpicture}
+\end{document}
