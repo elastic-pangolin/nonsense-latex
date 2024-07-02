@@ -1,0 +1,88 @@
+\documentclass[usenames,dvipsnames]{beamer}
+\usepackage{minted}
+\usepackage{tipa}
+\usetheme{uniud}
+\setbeamersize{text margin left=7mm,text margin right=5mm}
+\hypersetup{colorlinks=true,urlcolor=UniBlue,linkcolor=black}
+\definecolor{UniBrown}{RGB}{31, 31, 33}
+\begin{document}
+\title{Lightning Nonsense with \LaTeX}
+\date{\today}
+\author{Hedwig Amberg}
+\institute{Nonsense Knowledge 2024}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{WYSINWYG \textipa{[w\textsci zinw\textsci  g]}}
+\begin{itemize}
+    \item what-you-see-is-not-what-you-get \pause
+    \item display formatting, fonts etc. in control sequences (like html) instead of directly \pause
+    \item initially how all digital text editing worked\pause
+    \item not to be confused with: \pause
+        \begin{itemize}
+            \item WYSINWY\textcolor{UniOrange}{W} what-you-see-is-not-what-you-want (Microsoft Word) \pause
+            \item WYSINWY\textcolor{UniOrange}{C} what-you-see-is-not-what-you-copy (web exploit) \pause
+            \item WY\textcolor{UniOrange}{W}INWYG what-you-want-is-not-what-you-get (general life experience)
+        \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{hello world}
+\hfill\href{https://www.youtube.com/watch?v=xvFZjo5PgG0}{$\looparrowright$}
+\vspace{-1.2\baselineskip}
+\inputminted[linenos]{latex}{demos/hello_world.tex}
+\end{frame}
+
+\begin{frame}{old school: write letters}
+\hfill\href{https://www.youtube.com/watch?v=xvFZjo5PgG0}{$\looparrowright$}
+\vspace{-1.2\baselineskip}
+\inputminted[linenos]{latex}{demos/angry_letter.tex}
+\vfill
+\end{frame}
+
+\begin{frame}{science \& maths}
+\hfill\href{https://www.youtube.com/watch?v=xvFZjo5PgG0}{$\looparrowright$}
+\vspace{-1.2\baselineskip}
+\inputminted[linenos]{latex}{demos/equation.tex}
+\vfill
+\end{frame}
+
+\begin{frame}{fix pdf forms}
+\hfill\href{https://www.youtube.com/watch?v=xvFZjo5PgG0}{$\looparrowright$}
+\vspace{-1.2\baselineskip}
+\only<1>{\inputminted[linenos]{latex}{demos/cursed_form.tex}}
+\only<2>{\inputminted[linenos]{latex}{demos/fix_cursed_form.tex}}
+\end{frame}
+
+\begin{frame}{bonus: replace excel}
+\hfill\href{https://www.youtube.com/watch?v=xvFZjo5PgG0}{$\looparrowright$}
+\vspace{-1.2\baselineskip}
+\inputminted[linenos]{latex}{demos/chaos_table.tex}
+\end{frame}
+
+\begin{frame}{bonus: make a meme}
+\hfill\href{https://www.youtube.com/watch?v=xvFZjo5PgG0}{$\looparrowright$}
+\vspace{-1.2\baselineskip}
+\inputminted[linenos]{latex}{demos/meme.tex}
+\end{frame}
+
+\begin{frame}{if you're still interested}
+\begin{center}
+Overleaf online TeX-editor: \url{https://de.overleaf.com}
+\vfill
+TeXstudio (offline editor): \url{https://www.texstudio.org/}
+\end{center}
+\vfill
+More resources that can come in handy:
+\small
+\begin{itemize}
+\item \url{https://ctan.org}
+\item \url{https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf}
+\item \url{https://detexify.kirelabs.org/classify.html}
+\item \url{https://www.latextemplates.com/}
+\end{itemize}
+\end{frame}
+
+\end{document}
